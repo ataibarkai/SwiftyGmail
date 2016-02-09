@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63B9624C1C686F9C008623F5 /* SwiftyGmail_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B962411C686F9C008623F5 /* SwiftyGmail_iOS.framework */; };
-		63B9626B1C6871E6008623F5 /* SwiftyGmail_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B962601C6871E6008623F5 /* SwiftyGmail_Mac.framework */; };
+		63B9624C1C686F9C008623F5 /* SwiftyGmail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B962411C686F9C008623F5 /* SwiftyGmail.framework */; };
+		63B9626B1C6871E6008623F5 /* SwiftyGmail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B962601C6871E6008623F5 /* SwiftyGmail.framework */; };
 		63B962821C687736008623F5 /* SwiftyGmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B9627A1C687523008623F5 /* SwiftyGmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63B962831C687736008623F5 /* SwiftyGmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B9627A1C687523008623F5 /* SwiftyGmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63B962851C687BBA008623F5 /* BasicTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B962841C687BBA008623F5 /* BasicTest.swift */; };
@@ -33,9 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		63B962411C686F9C008623F5 /* SwiftyGmail_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGmail_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B962411C686F9C008623F5 /* SwiftyGmail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGmail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B9624B1C686F9C008623F5 /* SwiftyGmail_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyGmail_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63B962601C6871E6008623F5 /* SwiftyGmail_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGmail_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B962601C6871E6008623F5 /* SwiftyGmail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGmail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B9626A1C6871E6008623F5 /* SwiftyGmail_MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyGmail_MacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B962791C687523008623F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63B9627A1C687523008623F5 /* SwiftyGmail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyGmail.h; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63B9624C1C686F9C008623F5 /* SwiftyGmail_iOS.framework in Frameworks */,
+				63B9624C1C686F9C008623F5 /* SwiftyGmail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63B9626B1C6871E6008623F5 /* SwiftyGmail_Mac.framework in Frameworks */,
+				63B9626B1C6871E6008623F5 /* SwiftyGmail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,9 +89,9 @@
 		63B962421C686F9C008623F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63B962411C686F9C008623F5 /* SwiftyGmail_iOS.framework */,
+				63B962411C686F9C008623F5 /* SwiftyGmail.framework */,
 				63B9624B1C686F9C008623F5 /* SwiftyGmail_iOSTests.xctest */,
-				63B962601C6871E6008623F5 /* SwiftyGmail_Mac.framework */,
+				63B962601C6871E6008623F5 /* SwiftyGmail.framework */,
 				63B9626A1C6871E6008623F5 /* SwiftyGmail_MacTests.xctest */,
 			);
 			name = Products;
@@ -152,7 +152,7 @@
 			);
 			name = SwiftyGmail_iOS;
 			productName = SwiftyGmail_iOS;
-			productReference = 63B962411C686F9C008623F5 /* SwiftyGmail_iOS.framework */;
+			productReference = 63B962411C686F9C008623F5 /* SwiftyGmail.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		63B9624A1C686F9C008623F5 /* SwiftyGmail_iOSTests */ = {
@@ -188,7 +188,7 @@
 			);
 			name = SwiftyGmail_Mac;
 			productName = SwiftyGmail_Mac;
-			productReference = 63B962601C6871E6008623F5 /* SwiftyGmail_Mac.framework */;
+			productReference = 63B962601C6871E6008623F5 /* SwiftyGmail.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		63B962691C6871E6008623F5 /* SwiftyGmail_MacTests */ = {
@@ -371,6 +371,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = SwiftyGmail;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -412,6 +413,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyGmail;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -431,7 +433,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Atai-Barkai.SwiftyGmail-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftyGmail;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -447,7 +449,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Atai-Barkai.SwiftyGmail-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftyGmail;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -490,7 +492,7 @@
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftyGmail;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -511,7 +513,7 @@
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwiftyGmail;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
