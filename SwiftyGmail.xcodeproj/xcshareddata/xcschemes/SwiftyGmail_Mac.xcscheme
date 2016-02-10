@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "63B9625F1C6871E5008623F5"
-               BuildableName = "SwiftyGmail_Mac.framework"
+               BuildableName = "SwiftyGmail.framework"
                BlueprintName = "SwiftyGmail_Mac"
                ReferencedContainer = "container:SwiftyGmail.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63B9625F1C6871E5008623F5"
-            BuildableName = "SwiftyGmail_Mac.framework"
+            BuildableName = "SwiftyGmail.framework"
             BlueprintName = "SwiftyGmail_Mac"
             ReferencedContainer = "container:SwiftyGmail.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63B9625F1C6871E5008623F5"
-            BuildableName = "SwiftyGmail_Mac.framework"
+            BuildableName = "SwiftyGmail.framework"
             BlueprintName = "SwiftyGmail_Mac"
             ReferencedContainer = "container:SwiftyGmail.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "63B9625F1C6871E5008623F5"
-            BuildableName = "SwiftyGmail_Mac.framework"
+            BuildableName = "SwiftyGmail.framework"
             BlueprintName = "SwiftyGmail_Mac"
             ReferencedContainer = "container:SwiftyGmail.xcodeproj">
          </BuildableReference>
