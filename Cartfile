@@ -5,5 +5,4 @@ github "Moya/Moya"
 github "SwiftyJSON/SwiftyJSON"
 
 # Type-Safe µFramework
-github "ataibarkai/TypeBurritoFramework" "v0.3.1"
-
+github "ataibarkai/TypeBurritoFramework" ~> 0.3
