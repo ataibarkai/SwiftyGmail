@@ -1,0 +1,9 @@
+# Networking
+github "Moya/Moya"
+
+# json parsing
+github "SwiftyJSON/SwiftyJSON"
+
+# Type-Safe µFramework
+github "ataibarkai/TypeBurritoFramework" "v0.3.1"
+
