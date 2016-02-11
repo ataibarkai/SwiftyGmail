@@ -26,6 +26,7 @@ protocol GmailDescriptor{
 	
 	static func username() -> String
 	static func oauth2Token() -> String
+	
 }
 
 public enum Gmail {
