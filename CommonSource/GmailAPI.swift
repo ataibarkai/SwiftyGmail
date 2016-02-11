@@ -10,31 +10,21 @@ import Foundation
 import Moya
 
 
-let requestClosure = { (endpoint: Endpoint<Gmail>, done: NSURLRequest -> Void) in
-	let request = endpoint.urlRequest // This is the request Moya generates
-	
-	let token = "ya29.hQIm05lS-0lBj91XO1rRNTvErMW9U9YlTS7Lv6WKQrAWjpEN0LfNm3BOH2ROfIAU7_io"
-	let mutableRequest = request.mutableCopy() as! NSMutableURLRequest
-	mutableRequest.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-	
-	done(mutableRequest)
-}
-let GmailProvider = MoyaProvider<Gmail>(requestClosure: requestClosure)
 
 
-protocol GmailDescriptor{
+
+public protocol GmailDescriptor{
 	
 	static func username() -> String
 	static func oauth2Token() -> String
-	
 }
 
-public enum Gmail {
+public enum Gmail<Descriptor: GmailDescriptor> {
 	case SearchMessages(String)
 }
 
 extension Gmail: TargetType {
-	public var baseURL: NSURL { return NSURL(string: "https://www.googleapis.com/gmail/v1/users/atai.barkai@gmail.com")! }
+	public var baseURL: NSURL { return NSURL(string: "https://www.googleapis.com/gmail/v1/users/\(Descriptor.username())")! }
 	public var path: String {
 		switch self {
 		case .SearchMessages(_):
@@ -62,5 +52,23 @@ extension Gmail: TargetType {
 		default:
 			return "".dataUsingEncoding(NSUTF8StringEncoding)!
 		}
+	}
+}
+
+
+extension Gmail {
+	static func provider() -> MoyaProvider<Gmail<Descriptor>>{
+		
+		let requestClosure = { (endpoint: Endpoint< Gmail<Descriptor> >, done: NSURLRequest -> Void) in
+			let request = endpoint.urlRequest // This is the request Moya generates
+			
+			let token = Descriptor.oauth2Token()
+			let mutableRequest = request.mutableCopy() as! NSMutableURLRequest
+			mutableRequest.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+			
+			done(mutableRequest)
+		}
+		
+		return MoyaProvider< Gmail<Descriptor> >(requestClosure: requestClosure)
 	}
 }

@@ -16,7 +16,19 @@ class TestSearchMessages: XCTestCase {
 		
 		let expectation_retrievedGmailMessages = expectationWithDescription("expectation_retrievedGmailMessages")
 		
-		GmailProvider.request(Gmail.SearchMessages("from: frmsaul@gmail.com")) { (result) -> () in
+		enum TestDescriptor: GmailDescriptor{
+			static func username() -> String {
+				return "atai.barkai@gmail.com"
+			}
+			
+			static func oauth2Token() -> String {
+				return "ya29.hQIm05lS-0lBj91XO1rRNTvErMW9U9YlTS7Lv6WKQrAWjpEN0LfNm3BOH2ROfIAU7_io"
+			}
+		}
+		
+		let TestGmailProvider = Gmail<TestDescriptor>.provider()
+		
+		TestGmailProvider.request(Gmail.SearchMessages("from: frmsaul@gmail.com")) { (result) -> () in
 			expectation_retrievedGmailMessages.fulfill()
 			switch result{
 			case .Success(let t):
