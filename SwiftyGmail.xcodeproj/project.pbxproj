@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63B5609D1C6C878B009660A4 /* GmailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5609C1C6C878B009660A4 /* GmailAPI.swift */; };
+		63B5609E1C6C878B009660A4 /* GmailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5609C1C6C878B009660A4 /* GmailAPI.swift */; };
+		63B560A11C6C887F009660A4 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B5609F1C6C887F009660A4 /* Moya.framework */; };
+		63B560A21C6C887F009660A4 /* TypeBurritoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B560A01C6C887F009660A4 /* TypeBurritoFramework.framework */; };
+		63B560AC1C6CB288009660A4 /* TestSearchMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B560AB1C6CB288009660A4 /* TestSearchMessages.swift */; };
+		63B560AD1C6CB288009660A4 /* TestSearchMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B560AB1C6CB288009660A4 /* TestSearchMessages.swift */; };
+		63B560B01C6CB3F7009660A4 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B560AE1C6CB3F7009660A4 /* Moya.framework */; };
+		63B560B11C6CB3F7009660A4 /* TypeBurritoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B560AF1C6CB3F7009660A4 /* TypeBurritoFramework.framework */; };
+		63B560BD1C6CB6E6009660A4 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B5609F1C6C887F009660A4 /* Moya.framework */; };
+		63B560BE1C6CB6E6009660A4 /* TypeBurritoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B560A01C6C887F009660A4 /* TypeBurritoFramework.framework */; };
+		63B560C11C6CB6EE009660A4 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B560AE1C6CB3F7009660A4 /* Moya.framework */; };
+		63B560C21C6CB6EE009660A4 /* TypeBurritoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B560AF1C6CB3F7009660A4 /* TypeBurritoFramework.framework */; };
 		63B9624C1C686F9C008623F5 /* SwiftyGmail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B962411C686F9C008623F5 /* SwiftyGmail.framework */; };
 		63B9626B1C6871E6008623F5 /* SwiftyGmail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B962601C6871E6008623F5 /* SwiftyGmail.framework */; };
 		63B962821C687736008623F5 /* SwiftyGmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B9627A1C687523008623F5 /* SwiftyGmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63B962831C687736008623F5 /* SwiftyGmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B9627A1C687523008623F5 /* SwiftyGmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63B962851C687BBA008623F5 /* BasicTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B962841C687BBA008623F5 /* BasicTest.swift */; };
-		63B962861C687BBA008623F5 /* BasicTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B962841C687BBA008623F5 /* BasicTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63B5609C1C6C878B009660A4 /* GmailAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GmailAPI.swift; sourceTree = "<group>"; };
+		63B5609F1C6C887F009660A4 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		63B560A01C6C887F009660A4 /* TypeBurritoFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TypeBurritoFramework.framework; path = Carthage/Build/iOS/TypeBurritoFramework.framework; sourceTree = "<group>"; };
+		63B560AB1C6CB288009660A4 /* TestSearchMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSearchMessages.swift; sourceTree = "<group>"; };
+		63B560AE1C6CB3F7009660A4 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/Mac/Moya.framework; sourceTree = "<group>"; };
+		63B560AF1C6CB3F7009660A4 /* TypeBurritoFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TypeBurritoFramework.framework; path = Carthage/Build/Mac/TypeBurritoFramework.framework; sourceTree = "<group>"; };
 		63B962411C686F9C008623F5 /* SwiftyGmail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGmail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B9624B1C686F9C008623F5 /* SwiftyGmail_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyGmail_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B962601C6871E6008623F5 /* SwiftyGmail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyGmail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,7 +56,6 @@
 		63B962791C687523008623F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63B9627A1C687523008623F5 /* SwiftyGmail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyGmail.h; sourceTree = "<group>"; };
 		63B9627C1C687720008623F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63B962841C687BBA008623F5 /* BasicTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B560A11C6C887F009660A4 /* Moya.framework in Frameworks */,
+				63B560A21C6C887F009660A4 /* TypeBurritoFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +73,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B9624C1C686F9C008623F5 /* SwiftyGmail.framework in Frameworks */,
+				63B560BD1C6CB6E6009660A4 /* Moya.framework in Frameworks */,
+				63B560BE1C6CB6E6009660A4 /* TypeBurritoFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B560B01C6CB3F7009660A4 /* Moya.framework in Frameworks */,
+				63B560B11C6CB3F7009660A4 /* TypeBurritoFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,15 +92,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B9626B1C6871E6008623F5 /* SwiftyGmail.framework in Frameworks */,
+				63B560C11C6CB6EE009660A4 /* Moya.framework in Frameworks */,
+				63B560C21C6CB6EE009660A4 /* TypeBurritoFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63B560A31C6C8887009660A4 /* iOS Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63B5609F1C6C887F009660A4 /* Moya.framework */,
+				63B560A01C6C887F009660A4 /* TypeBurritoFramework.framework */,
+			);
+			name = "iOS Frameworks";
+			sourceTree = "<group>";
+		};
+		63B560A41C6C8B92009660A4 /* NSURLRequest+OAuth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "NSURLRequest+OAuth";
+			sourceTree = "<group>";
+		};
+		63B560B21C6CB44A009660A4 /* Mac Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63B560AE1C6CB3F7009660A4 /* Moya.framework */,
+				63B560AF1C6CB3F7009660A4 /* TypeBurritoFramework.framework */,
+			);
+			name = "Mac Frameworks";
+			sourceTree = "<group>";
+		};
 		63B962371C686F9C008623F5 = {
 			isa = PBXGroup;
 			children = (
+				63B560B21C6CB44A009660A4 /* Mac Frameworks */,
+				63B560A31C6C8887009660A4 /* iOS Frameworks */,
 				63B962781C687523008623F5 /* CommonSource */,
 				63B9627B1C687720008623F5 /* CommonTests */,
 				63B962421C686F9C008623F5 /* Products */,
@@ -100,8 +150,10 @@
 		63B962781C687523008623F5 /* CommonSource */ = {
 			isa = PBXGroup;
 			children = (
+				63B560A41C6C8B92009660A4 /* NSURLRequest+OAuth */,
 				63B962791C687523008623F5 /* Info.plist */,
 				63B9627A1C687523008623F5 /* SwiftyGmail.h */,
+				63B5609C1C6C878B009660A4 /* GmailAPI.swift */,
 			);
 			path = CommonSource;
 			sourceTree = "<group>";
@@ -110,7 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				63B9627C1C687720008623F5 /* Info.plist */,
-				63B962841C687BBA008623F5 /* BasicTest.swift */,
+				63B560AB1C6CB288009660A4 /* TestSearchMessages.swift */,
 			);
 			path = CommonTests;
 			sourceTree = "<group>";
@@ -289,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B5609D1C6C878B009660A4 /* GmailAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63B962851C687BBA008623F5 /* BasicTest.swift in Sources */,
+				63B560AC1C6CB288009660A4 /* TestSearchMessages.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B5609E1C6C878B009660A4 /* GmailAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63B962861C687BBA008623F5 /* BasicTest.swift in Sources */,
+				63B560AD1C6CB288009660A4 /* TestSearchMessages.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,26 +479,37 @@
 		63B962561C686F9C008623F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CommonSource/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Atai-Barkai.SwiftyGmail-iOS";
 				PRODUCT_NAME = SwiftyGmail;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		63B962571C686F9C008623F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CommonSource/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -458,8 +523,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS/**";
 				INFOPLIST_FILE = CommonTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/iOS";
 				PRODUCT_BUNDLE_IDENTIFIER = "Atai-Barkai.SwiftyGmail-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -470,8 +536,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS/**";
 				INFOPLIST_FILE = CommonTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/iOS";
 				PRODUCT_BUNDLE_IDENTIFIER = "Atai-Barkai.SwiftyGmail-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -480,12 +547,17 @@
 		63B962731C6871E6008623F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = CommonSource/Info.plist;
@@ -495,12 +567,14 @@
 				PRODUCT_NAME = SwiftyGmail;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		63B962741C6871E6008623F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
@@ -508,6 +582,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = CommonSource/Info.plist;
 				INSTALL_PATH = "@rpath";
@@ -528,9 +606,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac/**",
 				);
 				INFOPLIST_FILE = CommonTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(PROJECT_DIR)/Carthage/Build/Mac";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "Atai-Barkai.SwiftyGmail-MacTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -548,9 +627,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac/**",
 				);
 				INFOPLIST_FILE = CommonTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(PROJECT_DIR)/Carthage/Build/Mac";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "Atai-Barkai.SwiftyGmail-MacTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

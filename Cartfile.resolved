@@ -1,0 +1,7 @@
+github "Alamofire/Alamofire" "3.2.0"
+github "antitypical/Result" "1.0.2"
+github "ReactiveX/RxSwift" "2.0.0"
+github "SwiftyJSON/SwiftyJSON" "2.3.3"
+github "ataibarkai/TypeBurritoFramework" "v0.3.2"
+github "ReactiveCocoa/ReactiveCocoa" "v4.0.0"
+github "Moya/Moya" "6.1.3"
