@@ -10,26 +10,31 @@ import Foundation
 import Moya
 
 
-
-
-
-public protocol GmailDescriptor{
+public enum Gmail {
 	
-	static func username() -> String
-	static func oauth2Token() -> String
+	case SearchMessages(onUsername: String, withSearchString: String)
 }
 
-public enum Gmail<Descriptor: GmailDescriptor> {
-	case SearchMessages(String)
+extension Gmail{
+	
+	// each Gmail API call
+	public var username: String {
+		switch self {
+		case .SearchMessages(onUsername: let username, withSearchString: _):
+			return username
+		}
+	}
 }
 
 extension Gmail: TargetType {
-	public var baseURL: NSURL { return NSURL(string: "https://www.googleapis.com/gmail/v1/users/\(Descriptor.username())")! }
+	public var baseURL: NSURL { return NSURL(string: "https://www.googleapis.com/gmail/v1/users/\(self.username)")! }
 	public var path: String {
+		
 		switch self {
 		case .SearchMessages(_):
 			return "/messages"
 		}
+
 	}
 	public var method: Moya.Method {
 		switch self{
@@ -40,7 +45,7 @@ extension Gmail: TargetType {
 	
 	public var parameters: [String: AnyObject]? {
 		switch self {
-		case .SearchMessages(let searchString):
+		case .SearchMessages(onUsername: _, withSearchString: let searchString):
 			return [
 				"q": searchString,
 			]
@@ -57,18 +62,52 @@ extension Gmail: TargetType {
 
 
 extension Gmail {
-	static func provider() -> MoyaProvider<Gmail<Descriptor>>{
+	
+	static func provider(withClientId clientId: String,	scope: String) throws -> MoyaProvider<Gmail>{
 		
-		let requestClosure = { (endpoint: Endpoint< Gmail<Descriptor> >, done: NSURLRequest -> Void) in
-			let request = endpoint.urlRequest // This is the request Moya generates
+		guard let bundleId = NSBundle.mainBundle().bundleIdentifier
+			else { throw NSError(domain: "no bundle identifier exists for this app", code: -1, userInfo: nil) }
+		
+		let oauth2Object = GmailOAuth2.newOauth2Object(
+			withClientId: clientId,
+			scope: scope,
+			redirect_uris: ["\(bundleId):/oauth/callback"]
+		)
+		
+		
+		let requestClosure = { (endpoint: Endpoint<Gmail>, done: NSURLRequest -> Void) in
 			
-			let token = Descriptor.oauth2Token()
-			let mutableRequest = request.mutableCopy() as! NSMutableURLRequest
-			mutableRequest.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+			// NOTE: we MUST make sure to call the done(...) closure at some point
+			// HOWEVER this is not statically enforced due to the asynchronous nature of this API.
+			// TODO: This is pretty fucking ugly. Major stylistic improvements can be made to this convention-based protocol
+			// both on on OAuth2's side and on Moya's side. Perhaps just one side would make a big difference.
+			//
+			// In the meantime we will keep a close watch of possibile branches to make sure we indeed call `done(...)`.
 			
-			done(mutableRequest)
+
+			// -------------------------------
+			// Declerative definition of intended behavior:
+			oauth2Object.afterAuthorizeOrFailure = { a in
+				// 2 options: (1) parameters are valid | (2) parameters are invalid
+
+				// option (1): parameters are valid
+				if	let mutableRequest = endpoint.urlRequest.mutableCopy() as? NSMutableURLRequest,
+					let accessToken = oauth2Object.accessToken {
+						mutableRequest.signOAuth2(withOAuth2Token: accessToken)
+						done(mutableRequest)	// option 1 - call done()
+				}
+				// option (2): parameters are invalid
+				else{
+					done(endpoint.urlRequest)	// option 2 - call done()
+				}
+			}
+			
+			// -------------------------------
+			// Imperative call to actual initiation of authorization:
+			oauth2Object.authorize()
+			
 		}
 		
-		return MoyaProvider< Gmail<Descriptor> >(requestClosure: requestClosure)
+		return MoyaProvider<Gmail>(requestClosure: requestClosure)
 	}
 }

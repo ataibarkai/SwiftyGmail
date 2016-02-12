@@ -6,3 +6,6 @@ github "SwiftyJSON/SwiftyJSON"
 
 # Type-Safe µFramework
 github "ataibarkai/TypeBurritoFramework" ~> 0.3
+
+# OAuth2
+github "p2/OAuth2" ~> 2.2

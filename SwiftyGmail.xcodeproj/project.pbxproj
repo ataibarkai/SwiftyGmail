@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631C8B2F1C6E1B3E00E3F860 /* GmailOAuth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631C8B2E1C6E1B3E00E3F860 /* GmailOAuth2.swift */; };
+		631C8B301C6E1B3E00E3F860 /* GmailOAuth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631C8B2E1C6E1B3E00E3F860 /* GmailOAuth2.swift */; };
+		631C8B321C6E1F5800E3F860 /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631C8B311C6E1F5800E3F860 /* OAuth2.framework */; };
+		631C8B341C6E211500E3F860 /* NSMutableURLRequest+OAuth2Signining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631C8B331C6E211500E3F860 /* NSMutableURLRequest+OAuth2Signining.swift */; };
+		631C8B351C6E211500E3F860 /* NSMutableURLRequest+OAuth2Signining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631C8B331C6E211500E3F860 /* NSMutableURLRequest+OAuth2Signining.swift */; };
 		63B5609D1C6C878B009660A4 /* GmailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5609C1C6C878B009660A4 /* GmailAPI.swift */; };
 		63B5609E1C6C878B009660A4 /* GmailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5609C1C6C878B009660A4 /* GmailAPI.swift */; };
 		63B560A11C6C887F009660A4 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B5609F1C6C887F009660A4 /* Moya.framework */; };
@@ -43,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		631C8B2E1C6E1B3E00E3F860 /* GmailOAuth2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GmailOAuth2.swift; sourceTree = "<group>"; };
+		631C8B311C6E1F5800E3F860 /* OAuth2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuth2.framework; path = Carthage/Build/iOS/OAuth2.framework; sourceTree = "<group>"; };
+		631C8B331C6E211500E3F860 /* NSMutableURLRequest+OAuth2Signining.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableURLRequest+OAuth2Signining.swift"; sourceTree = "<group>"; };
 		63B5609C1C6C878B009660A4 /* GmailAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GmailAPI.swift; sourceTree = "<group>"; };
 		63B5609F1C6C887F009660A4 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		63B560A01C6C887F009660A4 /* TypeBurritoFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TypeBurritoFramework.framework; path = Carthage/Build/iOS/TypeBurritoFramework.framework; sourceTree = "<group>"; };
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631C8B321C6E1F5800E3F860 /* OAuth2.framework in Frameworks */,
 				63B560A11C6C887F009660A4 /* Moya.framework in Frameworks */,
 				63B560A21C6C887F009660A4 /* TypeBurritoFramework.framework in Frameworks */,
 			);
@@ -103,6 +112,7 @@
 		63B560A31C6C8887009660A4 /* iOS Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				631C8B311C6E1F5800E3F860 /* OAuth2.framework */,
 				63B5609F1C6C887F009660A4 /* Moya.framework */,
 				63B560A01C6C887F009660A4 /* TypeBurritoFramework.framework */,
 			);
@@ -153,7 +163,9 @@
 				63B560A41C6C8B92009660A4 /* NSURLRequest+OAuth */,
 				63B962791C687523008623F5 /* Info.plist */,
 				63B9627A1C687523008623F5 /* SwiftyGmail.h */,
+				631C8B331C6E211500E3F860 /* NSMutableURLRequest+OAuth2Signining.swift */,
 				63B5609C1C6C878B009660A4 /* GmailAPI.swift */,
+				631C8B2E1C6E1B3E00E3F860 /* GmailOAuth2.swift */,
 			);
 			path = CommonSource;
 			sourceTree = "<group>";
@@ -341,7 +353,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631C8B341C6E211500E3F860 /* NSMutableURLRequest+OAuth2Signining.swift in Sources */,
 				63B5609D1C6C878B009660A4 /* GmailAPI.swift in Sources */,
+				631C8B2F1C6E1B3E00E3F860 /* GmailOAuth2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631C8B351C6E211500E3F860 /* NSMutableURLRequest+OAuth2Signining.swift in Sources */,
 				63B5609E1C6C878B009660A4 /* GmailAPI.swift in Sources */,
+				631C8B301C6E1B3E00E3F860 /* GmailOAuth2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

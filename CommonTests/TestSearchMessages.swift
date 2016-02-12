@@ -16,29 +16,36 @@ class TestSearchMessages: XCTestCase {
 		
 		let expectation_retrievedGmailMessages = expectationWithDescription("expectation_retrievedGmailMessages")
 		
-		enum TestDescriptor: GmailDescriptor{
-			static func username() -> String {
-				return "atai.barkai@gmail.com"
-			}
+		
+		do {
+			let testGmailProvider = try Gmail.provider(
+				withClientId: "789483483852-tpo3hoakn0ocbdoc5hj1hlrfn3eld2dm.apps.googleusercontent.com",
+				scope: "https://www.googleapis.com/auth/gmail.readonly"
+			)
 			
-			static func oauth2Token() -> String {
-				return "ya29.hQIm05lS-0lBj91XO1rRNTvErMW9U9YlTS7Lv6WKQrAWjpEN0LfNm3BOH2ROfIAU7_io"
+			testGmailProvider.request(
+				Gmail.SearchMessages(
+					onUsername: "atai.barkai@gmail.com",
+					withSearchString: "from: frmsaul@gmail.com")
+				) { (result) -> () in
+					expectation_retrievedGmailMessages.fulfill()
+					switch result{
+					case .Success(let t):
+						print(t)
+						print(try? t.mapJSON())
+					case .Failure(let error):
+						print(error)
+						XCTFail("gmail provider request failed")
+					}
 			}
+
+			
+		} catch let error {
+			print("error: \(error)")
 		}
 		
-		let TestGmailProvider = Gmail<TestDescriptor>.provider()
+	
 		
-		TestGmailProvider.request(Gmail.SearchMessages("from: frmsaul@gmail.com")) { (result) -> () in
-			expectation_retrievedGmailMessages.fulfill()
-			switch result{
-			case .Success(let t):
-				print(t)
-				print(try? t.mapJSON())
-			case .Failure(let error):
-				print(error)
-				XCTFail("gmail provider request failed")
-			}
-		}
 		
 		waitForExpectationsWithTimeout(10) { error in
 			XCTAssertNil(error, "Error")
