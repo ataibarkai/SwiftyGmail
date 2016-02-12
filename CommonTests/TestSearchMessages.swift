@@ -44,9 +44,6 @@ class TestSearchMessages: XCTestCase {
 			print("error: \(error)")
 		}
 		
-	
-		
-		
 		waitForExpectationsWithTimeout(10) { error in
 			XCTAssertNil(error, "Error")
 		}
