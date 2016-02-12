@@ -61,7 +61,7 @@ extension Gmail: TargetType {
 }
 
 
-extension Gmail {
+public extension Gmail {
 	
 	static func provider(withClientId clientId: String,	scope: String) throws -> MoyaProvider<Gmail>{
 		
