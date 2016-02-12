@@ -87,7 +87,7 @@ extension Gmail {
 
 			// -------------------------------
 			// Declerative definition of intended behavior:
-			oauth2Object.afterAuthorizeOrFailure = { a in
+			oauth2Object.afterAuthorizeOrFailure = { _ in
 				// 2 options: (1) parameters are valid | (2) parameters are invalid
 
 				// option (1): parameters are valid
