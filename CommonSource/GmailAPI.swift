@@ -65,13 +65,13 @@ public extension Gmail {
 	
 	static func provider(withClientId clientId: String,	scope: String) throws -> MoyaProvider<Gmail>{
 		
-		guard let bundleId = NSBundle.mainBundle().bundleIdentifier?.lowercaseString
+		guard let bundleId = NSBundle.mainBundle().bundleIdentifier
 			else { throw NSError(domain: "no bundle identifier exists for this app", code: -1, userInfo: nil) }
 		
 		let oauth2Object = GmailOAuth2.newOauth2Object(
 			withClientId: clientId,
 			scope: scope,
-			redirect_uris: ["\(bundleId):/oauth/callback"]
+			redirect_uris: ["\(bundleId.lowercaseString):/oauth/callback"]
 		)
 		
 		
