@@ -2,7 +2,7 @@
 github "Moya/Moya"
 
 # json parsing
-github "SwiftyJSON/SwiftyJSON"
+# github "SwiftyJSON/SwiftyJSON"
 
 # Type-Safe µFramework
 github "ataibarkai/TypeBurritoFramework" ~> 0.3

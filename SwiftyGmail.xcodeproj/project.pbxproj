@@ -28,6 +28,7 @@
 		63B9626B1C6871E6008623F5 /* SwiftyGmail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B962601C6871E6008623F5 /* SwiftyGmail.framework */; };
 		63B962821C687736008623F5 /* SwiftyGmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B9627A1C687523008623F5 /* SwiftyGmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63B962831C687736008623F5 /* SwiftyGmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B9627A1C687523008623F5 /* SwiftyGmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C72C671C6F3B260075362E /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C72C661C6F3B260075362E /* OAuth2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		63B962791C687523008623F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63B9627A1C687523008623F5 /* SwiftyGmail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyGmail.h; sourceTree = "<group>"; };
 		63B9627C1C687720008623F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C72C661C6F3B260075362E /* OAuth2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuth2.framework; path = Carthage/Build/Mac/OAuth2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C72C671C6F3B260075362E /* OAuth2.framework in Frameworks */,
 				63B560B01C6CB3F7009660A4 /* Moya.framework in Frameworks */,
 				63B560B11C6CB3F7009660A4 /* TypeBurritoFramework.framework in Frameworks */,
 			);
@@ -129,6 +132,7 @@
 		63B560B21C6CB44A009660A4 /* Mac Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63C72C661C6F3B260075362E /* OAuth2.framework */,
 				63B560AE1C6CB3F7009660A4 /* Moya.framework */,
 				63B560AF1C6CB3F7009660A4 /* TypeBurritoFramework.framework */,
 			);
@@ -445,6 +449,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -487,6 +492,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
