@@ -71,7 +71,7 @@ public extension Gmail {
 		let oauth2Object = GmailOAuth2.newOauth2Object(
 			withClientId: clientId,
 			scope: scope,
-			redirect_uris: ["\(bundleId.lowercaseString):/oauth/callback"]
+			redirect_uris: ["\(bundleId):/oauth/callback"]
 		)
 		
 		
